@@ -21,8 +21,11 @@ class ProductController extends Controller
         $this->category = new Category();
     }
 
+    public function showProducts(){
+        return view('products');
+    }
+
     public function showAddProductForm(){
-        return 'Hello';
         return view('add-product',[
             'colors'=>$this->color->getColors(),
             'sizes'=>$this->sizes->getSizes(),

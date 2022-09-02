@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .btn-primary{
             background: #95A936;
@@ -79,7 +80,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="{{route('colors')}}">Color</a></li>
                         <li><a class="dropdown-item" href="{{route('sizes')}}">Size</a></li>
-                        <li><a class="dropdown-item" href="#">Category</a></li>
+                        <li><a class="dropdown-item" href="{{route('categories')}}">Category</a></li>
                     </ul>
                 </li>
             </ul>

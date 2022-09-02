@@ -21,4 +21,8 @@ class SettingsController extends Controller
     public function showSizes(){
         return view('sizes');
     }
+
+    public function showCategories(){
+        return view('categories');
+    }
 }

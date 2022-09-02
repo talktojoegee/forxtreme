@@ -2,8 +2,9 @@
    <div class="row">
        <div class="col-md-12">
            <div class="card">
-               <div class="card-header">Our Products</div>
+               <div class="card-header text-center"><h3>Our Products</h3></div>
            </div>
+
            <a href="{{route('add-product')}}" class="btn btn-sm btn-primary mt-3"> + Add Product</a>
 
            <div class="row mt-3" >

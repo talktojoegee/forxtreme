@@ -30,7 +30,7 @@
                                 <select name="color" id="" class="form-control">
                                     <option disabled selected>--Select color--</option>
                                     @foreach($colors as $color)
-                                        <option value="{{$color->id}}">{{$color->color_code ?? '' }}</option>
+                                        <option value="{{$color->id}}" >{{$color->color_code ?? '' }}</option>
                                     @endforeach
                                 </select>
                                 @error('color') <i class="text-danger">{{$message}}</i> @enderror

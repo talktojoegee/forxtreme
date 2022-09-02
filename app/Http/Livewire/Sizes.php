@@ -37,8 +37,10 @@ class Sizes extends Component
     public function storeSize(){
         $validatedData = $this->validate();
         $sizeResult = $this->psize->setSize($validatedData);
+        $this->productSize = "";
         if(!empty($sizeResult)){
             $this->success = true;
+
         }else{
             $this->error = true;
         }
