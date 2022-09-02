@@ -23,14 +23,16 @@
                                    </div>
                                </div>
                            </h5>
-                           <p> <small>Medium</small> | <small>{{env('APP_CURRENCY')}}{{number_format($product->price,2)}}</small></p>
-                           <p>
-                               @foreach($product->getProductCategories as $cat)
-                                   <small><span class="custom-badge">{{$cat->getCategory->category_name ?? '' }}</span></small>,
-                               @endforeach
-                           </p>
+                           <p> <small title="Size">{{$product->getSize->size ?? '' }}</small> | <small title="Price">{{env('APP_CURRENCY')}}{{number_format($product->price,2)}}</small></p>
 
-                           <p class="card-text" x-show="open">{{$product->product_details ?? '' }}</p>
+                           <div class="card-text" x-show="open">
+                               <p>
+                                   @foreach($product->getProductCategories as $cat)
+                                       <small><span class="custom-badge">{{$cat->getCategory->category_name ?? '' }}</span></small>,
+                                   @endforeach
+                               </p>
+                               {{$product->product_details ?? '' }}
+                           </div>
                            <a href="javascript:void(0);" class="btn btn-custom" @click="open = !open">View</a>
                        </div>
                    </div>

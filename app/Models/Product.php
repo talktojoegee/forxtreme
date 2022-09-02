@@ -22,6 +22,9 @@ class Product extends Model
     public function getColor(){
         return $this->belongsTo(Color::class, 'color_id');
     }
+    public function getSize(){
+        return $this->belongsTo(Size::class, 'size_id');
+    }
 
     public function setProduct(Request $request){
         $product = new Product();
